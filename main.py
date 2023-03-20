@@ -8,8 +8,8 @@ from s3 import S3Client
 import paho.mqtt.client as mqtt
 
 s3 = S3Client(
-    access_key=os.environ.get('access'),
-    secret_key=os.environ.get('secret'),
+    access_key=os.environ['access'],
+    secret_key=os.environ['secret'],
     region='ru-central1',
     s3_bucket='test-storage-iot'
 )
